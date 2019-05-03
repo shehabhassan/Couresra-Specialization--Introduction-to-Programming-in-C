@@ -1,6 +1,3 @@
-apple
-into
-that
-file
+apple into that file
 
  
