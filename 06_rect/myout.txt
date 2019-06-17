@@ -15,6 +15,6 @@ intersection(r3,r2): (-1,-2) to (4,5)
 intersection(r3,r3): (-2,-3) to (5,7)
 intersection(r3,r4): (-2,7) to (0,7)
 intersection(r4,r1): <empty>
-intersection(r4,r2): (-1,5) to (0,7)
+intersection(r4,r2): <empty>
 intersection(r4,r3): (-2,7) to (0,7)
-intersection(r4,r4): <empty>
+intersection(r4,r4): (-4,7) to (0,9)
