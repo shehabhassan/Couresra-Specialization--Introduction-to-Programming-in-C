@@ -88,10 +88,10 @@ card_t card_from_letters(char value_let, char suit_let) {
        }
      }
      switch(suit_let){
-    case 's': temp.suit= 's'; break;
-    case 'h': temp.suit= 'h'; break;
-    case 'd': temp.suit= 'd'; break;
-    case 'c': temp.suit= 'c';  break;
+    case 's': temp.suit= 0; break;
+    case 'h': temp.suit= 1; break;
+    case 'd': temp.suit= 2; break;
+    case 'c': temp.suit= 3;  break;
      default : return temp; 	       
      }
   //puts the value in two functions .
