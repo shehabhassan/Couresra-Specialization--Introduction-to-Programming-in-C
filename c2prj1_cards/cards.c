@@ -12,7 +12,7 @@ void assert_card_valid(card_t c) {
   assert(c.suit>NUM_SUITS);
   assert(c.suit!=0);
   // condition to check the correct value. 
-  if(c.value <2 || c.value>VALUE_ACE){
+  if(c.value<2 || c.value>VALUE_ACE){
     printf("error with value");
   }
   if(c.suit<NUM_SUITS || c.suit==0){
@@ -71,15 +71,12 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
       card_t temp;
-      if(value_let>='0' && value_let<='9'){
-	temp.value='0';
-      temp.suit  = suit_let ;
-      temp.value = value_let;
-      }
+     assert_card_valid(temp);    
   //check the value is in the range .
-      assert_card_valid(temp);
+     temp.value = value_let ;
+     temp.suit = suit_let ;
   //puts the value in two functions .
-      temp.suit = suit_letter(temp);
+      temp.suit  = suit_letter(temp);
       temp.value = value_letter(temp);
       return temp; } 
 card_t card_from_num(unsigned c) {
