@@ -100,7 +100,10 @@ card_t card_from_letters(char value_let, char suit_let) {
       return temp; } 
 card_t card_from_num(unsigned c) {
   card_t temp;
+ 
+  if  (c >=0 || c<52){
   temp.value = c%13 +1;
   temp.suit = c/13;
+  }
   return temp;
 }
