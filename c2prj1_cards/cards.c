@@ -74,9 +74,9 @@ card_t card_from_letters(char value_let, char suit_let) {
       temp.value = value_let;
   //check the value is in the range .
       assert_card_valid(temp);
-  // the second conditions for represent the value of suits
-      temp.suit = value_letter(temp);
-      temp.value = suit_letter(temp);
+  //puts the value in two functions .
+      temp.suit = suit_letter(temp);
+      temp.value = value_letter(temp);
       return temp; } 
 card_t card_from_num(unsigned c) {
   card_t temp;
