@@ -43,11 +43,11 @@ char value_letter(card_t c){
   }else {
     // represent value of 4 powerful cards to letter.
     switch(c.value){
-    case VALUE_ACE:   return 'A'; break;
-    case VALUE_KING:  return 'K'; break;
-    case VALUE_QUEEN: return 'Q'; break;
-    case VALUE_JACK:  return 'J'; break;    
-    case 10:          return '0'; break;
+    case VALUE_ACE:   return 'A'; 
+    case VALUE_KING:  return 'K'; 
+    case VALUE_QUEEN: return 'Q'; 
+    case VALUE_JACK:  return 'J';     
+    case 10:          return '0'; 
   default: return '?'; 
   }
   }
@@ -56,10 +56,10 @@ char value_letter(card_t c){
 char suit_letter(card_t c) {
   // represent name of suit to letters by switch case.
   switch (c.suit){
-  case SPADES:   return 's'; break;
-  case HEARTS:   return 'h'; break;
-  case DIAMONDS: return 'd'; break;
-  case CLUBS:    return 'c'; break;
+  case SPADES:   return 's'; 
+  case HEARTS:   return 'h'; 
+  case DIAMONDS: return 'd'; 
+  case CLUBS:    return 'c'; 
   default: return '?';
   }
   return c.suit;
