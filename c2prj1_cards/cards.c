@@ -75,24 +75,24 @@ card_t card_from_letters(char value_let, char suit_let) {
   //check the value is in the range .
      temp.value = value_let ;
      temp.suit = suit_let ;
-     if (value_let >='0' && valu_let <= '9'){
+     if (value_let >='0' && value_let <= '9'){
        temp.value = temp.value - '0'; 
      }else {
-       switch(value_let){
-       case '0': return temp.value=10;
-       case 'J': return temp.value=11;
-       case 'Q': return temp.value=12;
-       case 'K': return temp.value=13;
-       case 'A': return temp.value=14;
-       default : return temp.value;
+       switch(temp.value){
+       case '0': temp.value= 10; break;
+       case 'J': temp.value= 11; break;
+       case 'Q': temp.value= 12; break;
+       case 'K': temp.value= 13; break;
+       case 'A': temp.value= 14; break;
+       default : return temp;
        }
      }
      switch(suit_let){
-    case 's': return temp.value=0;
-    case 'h': return temp.value=1;
-    case 'd': return temp.value=2;
-    case 'c': return temp.value=3;
-     default : return temp.suit; 	       
+    case 's': temp.suit= 0; break;
+    case 'h': temp.suit= 1; break;
+    case 'd': temp.suit= 2; break;
+    case 'c': temp.suit= 3;  break;
+     default : return temp; 	       
      }
   //puts the value in two functions .
       temp.suit  = suit_letter(temp);
