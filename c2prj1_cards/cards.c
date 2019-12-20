@@ -23,15 +23,15 @@ void assert_card_valid(card_t c) {
 const char * ranking_to_string(hand_ranking_t r) {
   // switch case is return the text replacments.
   switch(r){
-    case STRAIGHT_FLUSH:    return "SRAIGHT_FLUSH";   break;
-    case FOUR_OF_A_KIND:    return "FOUR_OF_A_KIND";  break; 
-    case FULL_HOUSE:        return "FULL_HOUSE";      break;
-    case STRAIGHT:          return "SRAIGHT";         break;
-    case THREE_OF_A_KIND:   return "THREE_OF_A_KIND"; break;
-    case TWO_PAIR:          return "TWO_PAIR";        break;
-    case PAIR:              return "PAIR";            break;
-    case NOTHING:           return "NOTHING";         break;
-    case FLUSH:             return "FLUSH";           break;     
+    case STRAIGHT_FLUSH:    return "SRAIGHT_FLUSH";   
+    case FOUR_OF_A_KIND:    return "FOUR_OF_A_KIND";   
+    case FULL_HOUSE:        return "FULL_HOUSE";      
+    case STRAIGHT:          return "SRAIGHT";        
+    case THREE_OF_A_KIND:   return "THREE_OF_A_KIND"; 
+    case TWO_PAIR:          return "TWO_PAIR";        
+    case PAIR:              return "PAIR";            
+    case NOTHING:           return "NOTHING";         
+    case FLUSH:             return "FLUSH";                
   default: return "?";
   }
    return "";
