@@ -71,8 +71,11 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
       card_t temp;
+      if(temp.value>='0' || temp.value<='9'){
+	temp.value-='0';
       temp.suit  = suit_let ;
       temp.value = value_let;
+      }
   //check the value is in the range .
       assert_card_valid(temp);
   //puts the value in two functions .
