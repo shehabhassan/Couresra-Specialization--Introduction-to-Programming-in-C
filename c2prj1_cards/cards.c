@@ -51,6 +51,7 @@ char value_letter(card_t c){
   default: return '?'; 
   }
   }
+  return c.value; 
 }
 char suit_letter(card_t c) {
   // represent name of suit to letters by switch case.
@@ -61,7 +62,7 @@ char suit_letter(card_t c) {
   case CLUBS:    return 'c'; break;
   default: return '?';
   }
-
+  return c.suit;
 }
 void print_card(card_t c) {
   
