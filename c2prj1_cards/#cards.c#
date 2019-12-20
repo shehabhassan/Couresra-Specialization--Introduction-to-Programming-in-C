@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "cards.h"
 
-void assert_card_valid(card_t c){
+void assert_card_valid(card_t c) {
   // it is the function of check the correct value.
   assert(c.value>=2);
   assert(c.value<=VALUE_ACE);
@@ -12,14 +12,13 @@ void assert_card_valid(card_t c){
   assert(c.suit>NUM_SUITS);
   assert(c.suit!=0);
   // condition to check the correct value. 
-  if(c.value <2 || c.value>VALUE_ACE){
+  if(c.value<2 || c.value>VALUE_ACE){
     printf("error with value");
   }
   if(c.suit<NUM_SUITS || c.suit==0){
     printf("error with suit");
   }
 }
-
 const char * ranking_to_string(hand_ranking_t r) {
   // switch case is return the text replacments.
   switch(r){
@@ -43,25 +42,26 @@ char value_letter(card_t c){
   }else {
     // represent value of 4 powerful cards to letter.
     switch(c.value){
-    case VALUE_ACE:   return 'A'; break;
-    case VALUE_KING:  return 'K'; break;
-    case VALUE_QUEEN: return 'Q'; break;
-    case VALUE_JACK:  return 'J'; break;    
-    case 10:          return '0'; break;
+    case VALUE_ACE:   return 'A'; 
+    case VALUE_KING:  return 'K'; 
+    case VALUE_QUEEN: return 'Q'; 
+    case VALUE_JACK:  return 'J';     
+    case 10:          return '0'; 
   default: return '?'; 
   }
   }
+  return c.value; 
 }
 char suit_letter(card_t c) {
   // represent name of suit to letters by switch case.
   switch (c.suit){
-  case SPADES:   return 's'; break;
-  case HEARTS:   return 'h'; break;
-  case DIAMONDS: return 'd'; break;
-  case CLUBS:    return 'c'; break;
+  case SPADES:   return 's'; 
+  case HEARTS:   return 'h'; 
+  case DIAMONDS: return 'd'; 
+  case CLUBS:    return 'c'; 
   default: return '?';
   }
-
+  return c.suit;
 }
 void print_card(card_t c) {
   
@@ -70,17 +70,17 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
       card_t temp;
-      temp.suit  = suit_let ;
-      temp.value = value_let;
+     assert_card_valid(temp);    
   //check the value is in the range .
-      assert_card_valid(temp);
-  // the second conditions for represent the value of suits
-      temp.suit = value_letter(temp);
-      temp.value = suit_letter(temp);
+     temp.value = value_let ;
+     temp.suit = suit_let ;
+  //puts the value in two functions .
+      temp.suit  = suit_letter(temp);
+      temp.value = value_letter(temp);
       return temp; } 
 card_t card_from_num(unsigned c) {
   card_t temp;
   temp.value = c%13 +1;
-  temp.suit = c/13;
+  temp.suit = c;
   return temp;
 }
