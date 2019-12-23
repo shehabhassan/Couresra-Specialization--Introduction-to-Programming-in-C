@@ -88,10 +88,10 @@ card_t card_from_letters(char value_let, char suit_let) {
        }
      }
      switch(suit_let){
-    case 's': temp.suit= 1; break;
-    case 'h': temp.suit= 2; break;
-    case 'd': temp.suit= 3; break;
-    case 'c': temp.suit= 4;  break;
+    case 's': temp.suit= 0; break;
+    case 'h': temp.suit= 1; break;
+    case 'd': temp.suit= 2; break;
+    case 'c': temp.suit= 3;  break;
      default: return temp; 	       
      }
   //puts the value in two functions .
@@ -100,9 +100,17 @@ card_t card_from_letters(char value_let, char suit_let) {
       return temp; } 
 card_t card_from_num(unsigned c) {
   card_t temp;
-  for (int c=0;c < 52;c++){
+  if (c>=0 && c<52){
   temp.value = c%13 + 1;
-  temp.suit = c/13;
+  }
+  else if(c>=0 && c<13){ 
+    temp.suit = 's';
+  }else if (c>=13 && c<26){
+    temp.suit = 'h';
+  }else if (c>=26 && c<39){
+    temp.suit = 'd';
+  }else if (c>=39 && c<52){
+    temp.suit = 'c';
   }
   return temp;
 }
