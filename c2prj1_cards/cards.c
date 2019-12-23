@@ -100,17 +100,21 @@ card_t card_from_letters(char value_let, char suit_let) {
       return temp; } 
 card_t card_from_num(unsigned c) {
   card_t temp;
-  if (c>=0 && c<52){
+  for(c=0;c<=52; c++){
   temp.value = c%13 + 1;
   }
-  else if(c>=0 && c<13){ 
-    temp.suit = 's';
-  }else if (c>=13 && c<26){
-    temp.suit = 'h';
-  }else if (c>=26 && c<39){
-    temp.suit = 'd';
-  }else if (c>=39 && c<52){
-    temp.suit = 'c';
+    if(c=0 ){
+     temp.suit = c/13;
+     //temp.suit = 's';
+  }else if(c=13 ){
+     temp.suit =c/13;
+     // temp.suit = 'h';
+  }else if (c=26){
+     temp.suit = c/13;
+     //temp.suit = 'd';
+  }else if (c=39){
+    temp.suit= c/13;
+    //temp.suit = 'c';
   }
   return temp;
 }
