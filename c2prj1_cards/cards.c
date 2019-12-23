@@ -76,7 +76,7 @@ card_t card_from_letters(char value_let, char suit_let) {
      temp.value = value_let ;
      temp.suit = suit_let ;
      if (value_let >='2' && value_let <= '9'){
-       temp.value = temp.value - 48 ; 
+       temp.value = temp.value - '0' ; 
      }else {
        switch(temp.value){
        case '0': temp.value= 10; break;
