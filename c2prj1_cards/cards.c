@@ -76,14 +76,14 @@ card_t card_from_letters(char value_let, char suit_let) {
      temp.value = value_let ;
      temp.suit = suit_let ;
      if (value_let >='2' && value_let <= '9'){
-       temp.value = temp.value - '0' ; 
+       temp.value = value_let - '0' ; 
      }else {
        switch(temp.value){
        case '0': temp.value= 10; break;
-       case 'J': temp.value= 11; break;
-       case 'Q': temp.value= 12; break;
-       case 'K': temp.value= 13; break;
-       case 'A': temp.value= 14; break;
+       case 'J' : temp.value= 11; break;
+       case 'Q' : temp.value= 12; break;
+       case 'K' : temp.value= 13; break;
+       case 'A' : temp.value= 14; break;
        default: return temp;
        }
      }
@@ -99,22 +99,23 @@ card_t card_from_letters(char value_let, char suit_let) {
       temp.value = value_letter(temp);
       return temp; } 
 card_t card_from_num(unsigned c) {
+  //card_from_letters();
   card_t temp;
-  for(c=0;c<=52; c++){
+  for(int c=0;c<52; c++){
   temp.value = c%13 + 1;
-  }
   if(c==0 ){
      temp.suit = c/13;
-     //temp.suit = 's';
+     temp.suit = 's';
   }else if(c==13 ){
      temp.suit =c/13;
-     // temp.suit = 'h';
+      temp.suit = 'h';
   }else if (c==26){
      temp.suit = c/13;
-     //temp.suit = 'd';
+     temp.suit = 'd';
   }else if (c==39){
     temp.suit= c/13;
-    //temp.suit = 'c';
+    temp.suit = 'c';
+  }
   }
   return temp;
 }
