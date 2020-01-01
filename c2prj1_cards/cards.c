@@ -79,11 +79,11 @@ card_t card_from_letters(char value_let, char suit_let) {
        temp.value = value_let - '0' ; 
      }else {
        switch(temp.value){
-       case '0': temp.value= 10; break;
+       case '0' : temp.value= 10; break;
        case 'J' : temp.value= 11; break;
        case 'Q' : temp.value= 12; break;
        case 'K' : temp.value= 13; break;
-       case 'A' : temp.value= 14; break;
+       case 'A' : temp.value= 1; break;
        default: return temp;
        }
      }
