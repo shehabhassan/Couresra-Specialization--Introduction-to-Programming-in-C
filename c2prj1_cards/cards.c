@@ -102,11 +102,10 @@ card_t card_from_num(unsigned c) {
   //card_from_letters();
   card_t temp;
   for(int c=0;c<52; c++){
-  temp.value = c%13 + 1;
-  if(c==0 ){
+    if(c == 0){
      temp.suit = c/13;
      temp.suit = 's';
-  }else if(c==13 ){
+  }else if(c==13){
      temp.suit =c/13;
       temp.suit = 'h';
   }else if (c==26){
@@ -116,6 +115,7 @@ card_t card_from_num(unsigned c) {
     temp.suit= c/13;
     temp.suit = 'c';
   }
+   temp.value = c%13 + 1;   
   }
   return temp;
 }
