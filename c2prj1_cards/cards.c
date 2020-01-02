@@ -64,11 +64,9 @@ char suit_letter(card_t c) {
   }
   return c.suit;
 }
-void print_card(card_t c) {
-  
+void print_card(card_t c) {  
   printf("%c%c",value_letter(c),suit_letter(c)); 
 }
-
 card_t card_from_letters(char value_let, char suit_let) {
       card_t temp;
      assert_card_valid(temp);    
@@ -101,20 +99,37 @@ card_t card_from_letters(char value_let, char suit_let) {
 card_t card_from_num(unsigned c) {
   //card_from_letters();
   card_t temp;
-  if(c>=0 && c<=52){
+  for(unsigned c=0;c<52;c++){
     temp.value = c%13 + 1;
-  } else if(c == 0){
+    if (c>=2 && c<=9){
+      temp.value = c +'0';   
+    }
+    else if(c ==1 ){
+      temp.value = 'A';
+    }else if (c==10){
+      temp.value= '0';
+    }else if (c==11){
+      temp.value='J';
+    }else if (c==12){
+      temp.value ='Q';
+    }else if (c==13){
+      temp.value ='K';
+    }
+  }
+  for(unsigned c=0 ;c<52;c++){
+  if(c == 0){
      temp.suit = c/13;
      temp.suit = 's';
   }else if(c==13){
      temp.suit =c/13;
-      temp.suit = 'h';
+     temp.suit = 'h';
   }else if (c==26){
      temp.suit = c/13;
      temp.suit = 'd';
   }else if (c==39){
     temp.suit= c/13;
     temp.suit = 'c';
+  }
   }
   return temp;
 }
