@@ -99,7 +99,7 @@ card_t card_from_letters(char value_let, char suit_let) {
 card_t card_from_num(unsigned c) {
   //card_from_letters();
   card_t temp;
-  for(unsigned c=0;c<52;c++){
+  for(unsigned i=0;i<52;i++){
     temp.value = c%13 + 1;
     if (c>=2 && c<=9){
       temp.value = c +'0';   
@@ -116,7 +116,7 @@ card_t card_from_num(unsigned c) {
       temp.value ='K';
     }
   }
-  for(unsigned c=0 ;c<52;c++){
+  for(unsigned i=0 ;i<52;i++){
   if(c == 0){
      temp.suit = c/13;
      temp.suit = 's';
