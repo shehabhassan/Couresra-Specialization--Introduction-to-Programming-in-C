@@ -78,9 +78,9 @@ card_t card_from_letters(char value_let, char suit_let) {
      }else {
        switch(temp.value){
        case '0' : temp.value= 0; break;
-       case 'J' : temp.value= 11; break;
-       case 'Q' : temp.value= 12; break;
-       case 'K' : temp.value= 13; break;
+       case 'J' : temp.value= 12; break;
+       case 'Q' : temp.value= 13; break;
+       case 'K' : temp.value= 14; break;
        case 'A' : temp.value= 1; break;
        default: return temp;
        }
