@@ -104,7 +104,7 @@ card_t card_from_num(unsigned c) {
     if (c>=2 && c<=9){
       temp.value = c +'0';   
     }
-    else if(c ==1 ){
+    else if(c ==14 ){
       temp.value = 'A';
     }else if (c==10){
       temp.value= '0';
