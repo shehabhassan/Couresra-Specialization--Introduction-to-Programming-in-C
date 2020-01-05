@@ -104,16 +104,16 @@ card_t card_from_num(unsigned c) {
     if (c>=2 && c<=9){
       temp.value = c +'0';   
     }
-    else if(c ==14 ){
-      temp.value = 'A';
+    else if(c ==1 ){
+      temp.value = VALUE_ACE;
     }else if (c==10){
       temp.value= '0';
     }else if (c==11){
-      temp.value='J';
+      temp.value= VALUE_JACK;
     }else if (c==12){
-      temp.value ='Q';
+      temp.value = VALUE_QUEEN;
     }else if (c==13){
-      temp.value ='K';
+      temp.value = VALUE_KING;
     }
   }
   for(unsigned i=0 ;i<52;i++){
