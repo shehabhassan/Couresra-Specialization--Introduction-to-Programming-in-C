@@ -76,26 +76,27 @@ card_t card_from_letters(char value_let, char suit_let) {
      if (value_let >='2' && value_let <= '9'){
        temp.value = temp.value - '0' ; 
      }else {
-       switch(temp.value){
+       switch(value_let){
        case '0' : temp.value= 10; break;
        case 'K' : temp.value= VALUE_KING; break;
        case 'Q' : temp.value= VALUE_QUEEN; break;
        case 'J' : temp.value= VALUE_JACK; break;
        case 'A' : temp.value= VALUE_ACE; break;
-       default: return '?';
+       default: return temp;
        }
-     }
      switch(suit_let){
     case 's': temp.suit= SPADES; break;
     case 'h': temp.suit= HEARTS; break;
     case 'd': temp.suit= DIAMONDS; break;
     case 'c': temp.suit= CLUBS;  break;
-     default: return NUM_SUIT; 	       
+     default: return temp; 	      
+     }
      }
   //puts the value in two functions .
       temp.suit  = suit_letter(temp);
       temp.value = value_letter(temp);
-      return temp; } 
+      return temp;
+} 
 card_t card_from_num(unsigned c) {
   //card_from_letters();
   card_t temp;
