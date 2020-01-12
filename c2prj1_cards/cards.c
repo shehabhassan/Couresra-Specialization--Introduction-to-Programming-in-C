@@ -95,8 +95,8 @@ card_t card_from_letters(char value_let, char suit_let) {
      
      }*/
   //puts the value in two functions .
-      temp.suit  = suit_letter(temp);
-      temp.value = value_letter(temp);
+     //  temp.suit  = suit_letter(temp);
+     // temp.value = value_letter(temp);
       return temp;
 } 
 card_t card_from_num(unsigned c) {
