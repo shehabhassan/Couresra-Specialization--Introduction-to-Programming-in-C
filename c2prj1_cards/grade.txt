@@ -1,0 +1,50 @@
+Grading at Sun Jan 12 14:10:41 UTC 2020
+Compiling cards.c
+cards.c: In function ‘card_from_letters’:
+cards.c:89:29: error: "/*" within comment [-Werror=comment]
+     case 's': temp.suit= 115/*SPADES*/; break;
+                             ^
+cards.c:89:41: error: break statement not within loop or switch
+     case 's': temp.suit= 115/*SPADES*/; break;
+                                         ^
+cards.c:90:5: error: case label not within a switch statement
+     case 'h': temp.suit= 104/*HEARTS*/; break;
+     ^
+cards.c:90:41: error: break statement not within loop or switch
+     case 'h': temp.suit= 104/*HEARTS*/; break;
+                                         ^
+cards.c:91:5: error: case label not within a switch statement
+     case 'd': temp.suit= 100/* DIAMONDS*/; break;
+     ^
+cards.c:91:44: error: break statement not within loop or switch
+     case 'd': temp.suit= 100/* DIAMONDS*/; break;
+                                            ^
+cards.c:92:5: error: case label not within a switch statement
+     case 'c': temp.suit= 99/* CLUBS*/;  break;
+     ^
+cards.c:92:41: error: break statement not within loop or switch
+     case 'c': temp.suit= 99/* CLUBS*/;  break;
+                                         ^
+cards.c:93:6: error: ‘default’ label not within a switch statement
+      default: return temp;        
+      ^
+cards.c: At top level:
+cards.c:96:6: error: expected identifier or ‘(’ before ‘}’ token
+      }*/
+      ^
+cards.c:96:8: error: expected identifier or ‘(’ before ‘/’ token
+      }*/
+        ^
+cards.c:99:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+       temp.value = value_letter(temp);
+           ^
+cards.c:100:7: error: expected identifier or ‘(’ before ‘return’
+       return temp;
+       ^
+cards.c:101:1: error: expected identifier or ‘(’ before ‘}’ token
+ } 
+ ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
+
+Overall Grade: FAILED
