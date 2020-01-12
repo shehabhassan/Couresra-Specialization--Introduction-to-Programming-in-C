@@ -71,9 +71,9 @@ card_t card_from_letters(char value_let, char suit_let) {
       card_t temp;
      assert_card_valid(temp);    
   //check the value is in the range .
-     temp.value = value_let ;
-     temp.suit = suit_let ;
-     /* if (value_let >='2' && value_let <= '9'){
+     /* temp.value = value_let ;
+	temp.suit = suit_let ;*/
+        /* if (value_let >='2' && value_let <= '9'){
        temp.value = temp.value - '0' ; 
      }else {
        switch(value_let){
