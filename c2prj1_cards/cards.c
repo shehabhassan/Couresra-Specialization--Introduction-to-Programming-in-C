@@ -86,10 +86,10 @@ card_t card_from_letters(char value_let, char suit_let) {
 	 
        }
      switch(suit_let){
-    case 's': temp.suit= 115/*SPADES*/; break;
-    case 'h': temp.suit= 104/*HEARTS*/; break;
-    case 'd': temp.suit= 100/* DIAMONDS*/; break;
-    case 'c': temp.suit= 99/* CLUBS*/;  break;
+    case 's': temp.suit= 0; break;
+    case 'h': temp.suit= 1; break;
+    case 'd': temp.suit= 2; break;
+    case 'c': temp.suit= 3;  break;
      default: return temp; 	      
      }
      
