@@ -65,7 +65,7 @@ char suit_letter(card_t c) {
   return c.suit;
 }
 void print_card(card_t c) {  
-  printf("%c%c",value_letter(c),suit_letter(c)); 
+  printf("%c%c",c.value,c.suit); 
 }
 card_t card_from_letters(char value_let, char suit_let) {
       card_t temp;
@@ -83,7 +83,6 @@ card_t card_from_letters(char value_let, char suit_let) {
        case 'J' : temp.value= VALUE_JACK; break;
        case 'A' : temp.value= VALUE_ACE; break;
        default: return temp;
-	 
        }
      switch(suit_let){
     case 's': temp.suit= 0; break;
@@ -91,20 +90,19 @@ card_t card_from_letters(char value_let, char suit_let) {
     case 'd': temp.suit= 2; break;
     case 'c': temp.suit= 3;  break;
      default: return temp; 	      
-     }
-     
+     }     
      }*/
   //puts the value in two functions .
-     //  temp.suit  = suit_letter(temp);
-     // temp.value = value_letter(temp);
+      temp.suit  = suit_letter(temp);
+      temp.value = value_letter(temp);
       return temp;
 } 
 card_t card_from_num(unsigned c) {
   //card_from_letters();
   card_t temp;
- 
     temp.value = c%13 + 1;
-    if (temp.value>=2 && temp.value<=9){
+    temp.suit =c/13;
+    /* if (temp.value>=2 && temp.value<=9){
       temp.value = c +'0';   
     }
     else if(temp.value ==1  ){
@@ -117,10 +115,10 @@ card_t card_from_num(unsigned c) {
       temp.value = VALUE_QUEEN;
     }else if (temp.value==13){
       temp.value = VALUE_KING;
-    }
+    }*/
   
     //for(unsigned i=0 ;i<52;i++){
-  if(temp.value == 0){
+    /*  if(temp.value == 0){
      temp.suit = c/13;
      //temp.suit = 's';
   }else if(temp.value==13){
@@ -132,7 +130,7 @@ card_t card_from_num(unsigned c) {
   }else if (temp.value==39){
     temp.suit= c/13;
     //temp.suit = 'c';
-  }
+  }*/
   // }
   return temp;
 }
