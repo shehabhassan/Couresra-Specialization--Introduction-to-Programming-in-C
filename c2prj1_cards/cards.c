@@ -102,8 +102,8 @@ card_t card_from_num(unsigned c) {
   card_t temp;
     temp.value = c%13 + 1;
     temp.suit =c/13;
-    /* if (temp.value>=2 && temp.value<=9){
-      temp.value = c +'0';   
+     if (temp.value>=2 && temp.value<=9){
+       return  temp;//.value = c +'0';   
     }
     else if(temp.value ==1  ){
       temp.value = VALUE_ACE;
@@ -115,11 +115,10 @@ card_t card_from_num(unsigned c) {
       temp.value = VALUE_QUEEN;
     }else if (temp.value==13){
       temp.value = VALUE_KING;
-    }*/
-  
+    }
     //for(unsigned i=0 ;i<52;i++){
-    /*  if(temp.value == 0){
-     temp.suit = c/13;
+      if(temp.value == 0){
+	return  temp;//.suit = c/13;
      //temp.suit = 's';
   }else if(temp.value==13){
      temp.suit =c/13;
@@ -130,7 +129,7 @@ card_t card_from_num(unsigned c) {
   }else if (temp.value==39){
     temp.suit= c/13;
     //temp.suit = 'c';
-  }*/
+  }
   // }
   return temp;
 }
