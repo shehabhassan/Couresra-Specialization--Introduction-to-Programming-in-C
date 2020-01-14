@@ -101,7 +101,7 @@ card_t card_from_letters(char value_let, char suit_let) {
 card_t card_from_num(unsigned c) {
   //card_from_letters();
   card_t temp;
-  // temp.value = c%13 + 1;
+  /*  // temp.value = c%13 + 1;
   //  temp.suit =c/13;
      if (temp.value>=2 && temp.value<=9){
        return  temp;//.value = c +'0';   
@@ -121,16 +121,16 @@ card_t card_from_num(unsigned c) {
       if(temp.value == 0){
 	return  temp;//.suit = c/13;
      //temp.suit = 's';
-  }else if(temp.value==13){
+  }else if(temp.suit==13){
      temp.suit =c/13;
      //temp.suit = 'h';
-  }else if (temp.value==26){
+  }else if (temp.suit==26){
      temp.suit = c/13;
      // temp.suit = 'd';
-  }else if (temp.value==39){
+  }else if (temp.suit==39){
     temp.suit= c/13;
     //temp.suit = 'c';
   }
-  // }
+  //*/ }
   return temp;
 }
