@@ -1,0 +1,28 @@
+Grading at Tue Jan 14 20:51:18 UTC 2020
+Compiling cards.c
+cards.c: In function ‘card_from_num’:
+cards.c:106:14: error: ‘temp.value’ is used uninitialized in this function [-Werror=uninitialized]
+      if (temp.value>=2 && temp.value<=9){
+              ^
+cards.c:106:31: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+      if (temp.value>=2 && temp.value<=9){
+                               ^
+cards.c:109:17: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     else if(temp.value ==1  ){
+                 ^
+cards.c:111:19: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     }else if (temp.value==10){
+                   ^
+cards.c:113:19: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     }else if (temp.value==11){
+                   ^
+cards.c:115:19: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     }else if (temp.value==12){
+                   ^
+cards.c:117:19: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     }else if (temp.value==13){
+                   ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
+
+Overall Grade: FAILED
