@@ -13,7 +13,7 @@ typedef enum {
 } suit_t;
 
 struct card_tag {
-  unsigned value;
+  unsigned  value;
   suit_t suit;
 };
 typedef struct card_tag card_t;

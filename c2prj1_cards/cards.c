@@ -68,16 +68,18 @@ void print_card(card_t c) {
   printf("%c%c",c.value,c.suit); 
 }
 card_t card_from_letters(char value_let, char suit_let) {
-      card_t temp;
-     assert_card_valid(temp);    
+  card_t temp;
+     assert_card_valid(temp);
+       temp.suit  = suit_letter(temp);
+       temp.value = value_letter(temp);     
   //check the value is in the range .
-     /* temp.value = value_let ;
-	temp.suit = suit_let ;*/
-        /* if (value_let >='2' && value_let <= '9'){
-       temp.value = temp.value - '0' ; 
-     }else {
+        temp.value = value_let ;
+	temp.suit  = suit_let ;
+      if (value_let >='2' && value_let <= '9'){
+      return  temp ; 
+     } else {
        switch(value_let){
-       case '0' : temp.value= 0; break;
+       case '0' : temp.value= 10; break;
        case 'K' : temp.value= VALUE_KING; break;
        case 'Q' : temp.value= VALUE_QUEEN; break;
        case 'J' : temp.value= VALUE_JACK; break;
@@ -91,10 +93,8 @@ card_t card_from_letters(char value_let, char suit_let) {
     case 'c': temp.suit= 3;  break;
      default: return temp; 	      
      }     
-     }*/
+     }
   //puts the value in two functions .
-      temp.suit  = suit_letter(temp);
-      temp.value = value_letter(temp);
       return temp;
 } 
 card_t card_from_num(unsigned c) {
