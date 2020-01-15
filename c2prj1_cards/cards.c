@@ -65,7 +65,7 @@ char suit_letter(card_t c) {
   return c.suit;
 }
 void print_card(card_t c) {  
-  printf("%c%c",c.value,c.suit); 
+  printf("%c%c",value_letter(c),suit_letter(c)); 
 }
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
