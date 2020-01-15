@@ -73,8 +73,8 @@ card_t card_from_letters(char value_let, char suit_let) {
        temp.suit  = suit_letter(temp);
        temp.value = value_letter(temp);     
   //check the value is in the range .
-        temp.value = value_let ;
-	temp.suit  = suit_let ;
+       /* temp.value = value_let ;
+	temp.suit  = suit_let ;*/
       if (value_let >='2' && value_let <= '9'){
 	temp.value = value_let - '0';
       return  temp ; 
