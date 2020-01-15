@@ -85,6 +85,14 @@ card_t card_from_letters(char value_let, char suit_let) {
        case 'Q' : temp.value= VALUE_QUEEN; break;
        case 'J' : temp.value= VALUE_JACK; break;
        case 'A' : temp.value= VALUE_ACE; break;
+       case '2' : temp.value= 2; break;
+       case '3' : temp.value= 3; break;
+       case '4' : temp.value= 4; break; 
+       case '5' : temp.value= 5; break;
+       case '6' : temp.value= 6; break;
+       case '7' : temp.value= 7; break;       
+       case '8' : temp.value= 8; break;
+       case '9' : temp.value= 9; break;
        default: return temp;
        }
      switch(suit_let){
