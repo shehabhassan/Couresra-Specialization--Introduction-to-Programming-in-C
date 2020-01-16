@@ -107,37 +107,35 @@ card_t card_from_letters(char value_let, char suit_let) {
       return temp;
 } 
 card_t card_from_num(unsigned c) {
-  //card_from_letters();
   card_t temp;
-
-  /*  // temp.value = c%13 + 1;
+   // temp.value = c%13 + 1;
   //  temp.suit =c/13;
-     if (temp.value>=2 && temp.value<=9){
-       return  temp;//.value = c +'0';   
+     if (c>=2 && c<=9){
+        temp.value=c +'0';   
     }
-    else if(temp.value ==1  ){
+    else if(c == 1  ){
       temp.value = VALUE_ACE;
-    }else if (temp.value==10){
+    }else if (c==10){
       temp.value= '0';
-    }else if (temp.value==11){
+    }else if (c==11){
       temp.value= VALUE_JACK;
-    }else if (temp.value==12){
+    }else if (c==12){
       temp.value = VALUE_QUEEN;
-    }else if (temp.value==13){
+    }else if (c==13){
       temp.value = VALUE_KING;
     }
     //for(unsigned i=0 ;i<52;i++){
-      if(temp.value == 0){
-	return  temp;//.suit = c/13;
+     if(c == 0){
+     temp.suit = c/13;
      //temp.suit = 's';
-  }else if(temp.suit==13){
+  }else if(c==13){
      temp.suit =c/13;
      //temp.suit = 'h';
-  }else if (temp.suit==26){
+  }else if (c==26){
      temp.suit = c/13;
      // temp.suit = 'd';
-  }else if (temp.suit==39){
-    temp.suit= c/13;
+  }else if (c==39){
+     temp.suit= c/13;
     //temp.suit = 'c';
   }
   // }*/
