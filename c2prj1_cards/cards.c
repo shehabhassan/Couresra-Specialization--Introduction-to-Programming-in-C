@@ -109,9 +109,9 @@ card_t card_from_letters(char value_let, char suit_let) {
 card_t card_from_num(unsigned c) {
   card_t temp;
    for ( int i=0;i<52;i++){ 
-     temp.value = c%13 + 1;
+     temp.value = i%13 + 1;
     if (i>=2 && i<=9){
-       temp.value = c +'0';   
+       temp.value += '0';   
     }
     /*else if(temp.value == 1  ){
       temp.value = VALUE_ACE;
@@ -124,16 +124,16 @@ card_t card_from_num(unsigned c) {
     }else if (temp.value ==13){
       temp.value = VALUE_KING;
       }*/
-     if(temp.suit >=0 && temp.suit<13){
+     if(temp.suit==0 ){
      temp.suit = c/13;
      temp.suit = 's';
-  }else if(temp.suit>=13 && temp.suit<26 ){
+  }else if(temp.suit==13 ){
        temp.suit =c/13;
        temp.suit = 'h';
-     }else if(temp.suit>=26 && temp.suit < 39){
+     }else if(temp.suit==26){
        temp.suit = c/13; 
        temp.suit = 'd';
-  }else if(temp.suit>=39 && temp.suit<=51){
+  }else if(temp.suit==39){
        temp.suit = c/13;
        temp.suit = 'c';
   }
