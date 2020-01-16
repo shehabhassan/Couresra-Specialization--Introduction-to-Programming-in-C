@@ -124,16 +124,16 @@ card_t card_from_num(unsigned c) {
     }else if (temp.value ==13){
       temp.value = VALUE_KING;
       }*/
-     if(temp.suit==0 ){
+     if(i==0 ){
      temp.suit = c/13;
      temp.suit = 's';
-  }else if(temp.suit==13 ){
+  }else if(i==13 ){
        temp.suit =c/13;
        temp.suit = 'h';
-     }else if(temp.suit==26){
+     }else if(i==26){
        temp.suit = c/13; 
        temp.suit = 'd';
-  }else if(temp.suit==39){
+  }else if(i==39){
        temp.suit = c/13;
        temp.suit = 'c';
   }
