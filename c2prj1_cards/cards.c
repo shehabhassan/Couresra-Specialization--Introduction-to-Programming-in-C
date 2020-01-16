@@ -110,9 +110,9 @@ card_t card_from_num(unsigned c) {
   card_t temp;
   temp.value = c%13+1;  
    temp.suit =c/13;
-  /* for ( int i=0;i<52;i++){ 
+   for ( int i=0;i<52;i++){ 
      temp.value = c%13 + 1;
-    if (i>=2 && i<=9){
+    if (c>=2 && i<=9){
        temp.value = c +'0';   
     }
     else if(i == 1  ){
@@ -126,7 +126,6 @@ card_t card_from_num(unsigned c) {
     }else if (i==13){
       temp.value = VALUE_KING;
     }
-    //for(unsigned i=0 ;i<52;i++){
      if(i == 0){
      temp.suit = c/13;
      temp.suit = 's';
@@ -140,6 +139,6 @@ card_t card_from_num(unsigned c) {
      temp.suit= c/13;
     temp.suit = 'c';
   }
-  }*/
+  }
   return temp;
 }
