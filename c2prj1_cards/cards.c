@@ -110,7 +110,8 @@ card_t card_from_num(unsigned c) {
   card_t temp;
    // temp.value = c%13 + 1;
   //  temp.suit =c/13;
-     if (c>=2 && c<=9){
+  for ( int i=0;i<52;i++){ 
+    if (c>=2 && c<=9){
         temp.value=c +'0';   
     }
     else if(c == 1  ){
@@ -138,6 +139,6 @@ card_t card_from_num(unsigned c) {
      temp.suit= c/13;
     //temp.suit = 'c';
   }
-  // }*/
+  }
   return temp;
 }
