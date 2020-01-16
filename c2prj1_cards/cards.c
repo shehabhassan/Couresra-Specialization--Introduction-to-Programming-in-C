@@ -111,31 +111,31 @@ card_t card_from_num(unsigned c) {
    // temp.value = c%13 + 1;
   //  temp.suit =c/13;
   for ( int i=0;i<52;i++){ 
-    if (c>=2 && c<=9){
+    if (i>=2 && i<=9){
         temp.value=c +'0';   
     }
-    else if(c == 1  ){
+    else if(i == 1  ){
       temp.value = VALUE_ACE;
-    }else if (c==10){
+    }else if (i==10){
       temp.value= '0';
-    }else if (c==11){
+    }else if (i==11){
       temp.value= VALUE_JACK;
-    }else if (c==12){
+    }else if (i==12){
       temp.value = VALUE_QUEEN;
-    }else if (c==13){
+    }else if (i==13){
       temp.value = VALUE_KING;
     }
     //for(unsigned i=0 ;i<52;i++){
-     if(c == 0){
+     if(i == 0){
      temp.suit = c/13;
      //temp.suit = 's';
-  }else if(c==13){
+  }else if(i==13){
      temp.suit =c/13;
      //temp.suit = 'h';
-  }else if (c==26){
+  }else if(i==26){
      temp.suit = c/13;
      // temp.suit = 'd';
-  }else if (c==39){
+  }else if(i==39){
      temp.suit= c/13;
     //temp.suit = 'c';
   }
