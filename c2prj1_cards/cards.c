@@ -118,7 +118,7 @@ card_t card_from_num(unsigned c) {
   }else if(c>=39 && c<=51){
        temp.suit = CLUBS;
   }
-   temp.value  = c%13+1;
- //temp.value += 2;
+   temp.value  = c%13;
+   temp.value += 2;
   return temp;
 }
