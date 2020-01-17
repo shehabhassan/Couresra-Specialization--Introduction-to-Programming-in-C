@@ -7,10 +7,10 @@ void assert_card_valid(card_t c) {
   // it is the function of check the correct value.
     assert(c.value);
     assert(VALUE_ACE);
-    assert(VALUE_KING);
+    assert();
   //it is the function of check the correct value.
     assert(SPADES);
-    assert(c.suit!=0);
+    assert(c.suit);
     assert(NUM_SUITS);
     // condition to check the correct value. 
   if(c.value<=2 || c.value>=VALUE_ACE){
