@@ -108,35 +108,18 @@ card_t card_from_letters(char value_let, char suit_let) {
 } 
 card_t card_from_num(unsigned c) {
   card_t temp;
-   for ( int i=0;i<52;i++){ 
-     temp.value = i%13 + 1;
-    if (i>=2 && i<=9){
-       temp.value += '0';   
-    }
-    /*else if(temp.value == 1  ){
-      temp.value = VALUE_ACE;
-    }else if (temp.value==10){
-      temp.value= '0';
-    }else if (temp.value==11){
-      temp.value= VALUE_JACK;
-    }else if (i==12){
-      temp.value = VALUE_QUEEN;
-    }else if (temp.value ==13){
-      temp.value = VALUE_KING;
-      }*/
-     if(i==0 ){
-     temp.suit = c/13;
+   for ( int i=0;i<52;i++){
+     if(c>=0 && c<=12 ){
      temp.suit = 's';
-  }else if(i==13 ){
-       temp.suit =c/13;
+  }else if(c>=13 && c<=25 ){
        temp.suit = 'h';
-     }else if(i==26){
-       temp.suit = c/13; 
+     }else if(c>=26 && c<=38){
        temp.suit = 'd';
-  }else if(i==39){
-       temp.suit = c/13;
+  }else if(c>=39 && c<=51){
        temp.suit = 'c';
   }
   }
+   temp.value = c%13+1;
+   temp.value += 2;
   return temp;
 }
