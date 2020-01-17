@@ -1,0 +1,65 @@
+Grading at Fri Jan 17 11:54:28 UTC 2020
+Compiling cards.c
+Testing card_from_letters
+error with valueerror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suiterror with suitPassed
+Testing value_letter and suit_letter
+Passed
+Testing print_card
+Passed
+Testing card_from_num
+When I use card_from_num on numbers 0<= i < 52
+I expect to see each card exactly once, but I see:
+3?
+4?
+5?
+6?
+7?
+8?
+9?
+0?
+J?
+Q?
+K?
+A?
+5?
+3?
+4?
+5?
+6?
+7?
+8?
+9?
+0?
+J?
+Q?
+K?
+A?
+5?
+3?
+4?
+5?
+6?
+7?
+8?
+9?
+0?
+J?
+Q?
+K?
+A?
+5?
+3?
+4?
+5?
+6?
+7?
+8?
+9?
+0?
+J?
+Q?
+K?
+A?
+5?
+
+Overall Grade: FAILED
