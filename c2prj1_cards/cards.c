@@ -74,11 +74,11 @@ card_t card_from_letters(char value_let, char suit_let) {
 	temp.suit  = suit_let ;
 	if (temp.value < 2 || temp.value > 14){
 	  printf("Invalid Inputs\n");
-	  return 0;
+	 
 	}
 	if (temp.suit < 0 || temp.suit > 3){
 	  printf("Invalid Inputs\n");
-          return 0;
+          
 	}
 	/* if (value_let >='2' && value_let <= '9'){
 	temp.value = value_let - '0';
