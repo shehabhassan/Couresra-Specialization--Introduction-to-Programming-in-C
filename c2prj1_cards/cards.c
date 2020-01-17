@@ -110,7 +110,7 @@ card_t card_from_num(unsigned c) {
   card_t temp;
   //for ( int i=0;i<52;i++){
       if(c>=0 && c<=12 ){
-     temp.suit = SPAEDS;
+     temp.suit = SPADES;
   }else if(c>=13 && c<=25 ){
        temp.suit = HEARTS;
      }else if(c>=26 && c<=38){
