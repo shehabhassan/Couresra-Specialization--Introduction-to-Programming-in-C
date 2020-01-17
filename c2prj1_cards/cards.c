@@ -80,10 +80,10 @@ card_t card_from_letters(char value_let, char suit_let) {
 	  printf("Invalid Inputs\n");
           
 	}*/
-	 if (value_let >='2' && value_let <= '9'){
+	/* if (value_let >='2' && value_let <= '9'){
 	temp.value = value_let - '0';
       return  temp ; 
-      } else{
+      } else{*/
        switch(value_let){
        case '0' : temp.value= 10; break;
        case 'K' : temp.value= VALUE_KING; break;
@@ -107,7 +107,7 @@ card_t card_from_letters(char value_let, char suit_let) {
     case 'c': temp.suit= 3;  break;
      default: return temp; 	      
      }     
-	 }
+     // }
   //puts the value in two functions .
       return temp;
 } 
