@@ -1,0 +1,10 @@
+Grading at Fri Jan 17 11:57:12 UTC 2020
+Compiling cards.c
+cards.c: In function ‘card_from_num’:
+cards.c:113:18: error: ‘SPAEDS’ undeclared (first use in this function)
+      temp.suit = SPAEDS;
+                  ^
+cards.c:113:18: note: each undeclared identifier is reported only once for each function it appears in
+Could not compile your card.c!
+
+Overall Grade: FAILED
