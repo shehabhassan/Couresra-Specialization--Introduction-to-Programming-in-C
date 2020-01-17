@@ -1,9 +1,0 @@
-Grading at Fri Jan 17 13:44:47 UTC 2020
-Compiling cards.c
-cards.c: In function ‘assert_card_valid’:
-cards.c:15:14: error: expected expression before ‘<’ token
-   if(c.value=<2 || c.value>=VALUE_ACE){
-              ^
-Could not compile your card.c!
-
-Overall Grade: FAILED

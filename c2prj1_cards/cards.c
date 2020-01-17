@@ -12,7 +12,7 @@ void assert_card_valid(card_t c) {
     assert(c.suit>=SPADES);
     assert(c.suit!=0);  
     // condition to check the correct value. 
-  if(c.value=<2 || c.value>=VALUE_ACE){
+  if(c.value<=2 || c.value>=VALUE_ACE){
     printf("error with value");
   }
   if(c.suit==0){
