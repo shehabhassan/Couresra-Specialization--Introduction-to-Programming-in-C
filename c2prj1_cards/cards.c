@@ -72,15 +72,15 @@ card_t card_from_letters(char value_let, char suit_let) {
   //check the value is in the range .
        temp.value = value_let ;
 	temp.suit  = suit_let ;
-	if (temp.value < 2 || temp.value > 14){
+	/*if (temp.value < 2 || temp.value > 14){
 	  printf("Invalid Inputs\n");
 	 
 	}
 	if (temp.suit < 0 || temp.suit > 3){
 	  printf("Invalid Inputs\n");
           
-	}
-	/* if (value_let >='2' && value_let <= '9'){
+	}*/
+	 if (value_let >='2' && value_let <= '9'){
 	temp.value = value_let - '0';
       return  temp ; 
       } else{
@@ -107,7 +107,7 @@ card_t card_from_letters(char value_let, char suit_let) {
     case 'c': temp.suit= 3;  break;
      default: return temp; 	      
      }     
-     */
+	 }
   //puts the value in two functions .
       return temp;
 } 
