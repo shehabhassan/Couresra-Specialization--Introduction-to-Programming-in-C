@@ -108,8 +108,8 @@ card_t card_from_letters(char value_let, char suit_let) {
 } 
 card_t card_from_num(unsigned c) {
   card_t temp;
-   for ( int i=0;i<52;i++){
-     if(c>=0 && c<=12 ){
+  //for ( int i=0;i<52;i++){
+      if(c>=0 && c<=12 ){
      temp.suit = 's';
   }else if(c>=13 && c<=25 ){
        temp.suit = 'h';
@@ -117,7 +117,6 @@ card_t card_from_num(unsigned c) {
        temp.suit = 'd';
   }else if(c>=39 && c<=51){
        temp.suit = 'c';
-  }
   }
    temp.value = c%13+1;
    temp.value += 2;
