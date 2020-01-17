@@ -119,6 +119,6 @@ card_t card_from_num(unsigned c) {
        temp.suit = CLUBS;
   }
    temp.value = c%13+1;
-   temp.value += 2;
+   //temp.value += 2;
   return temp;
 }
