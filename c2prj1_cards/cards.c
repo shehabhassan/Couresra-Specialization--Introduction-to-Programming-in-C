@@ -5,15 +5,15 @@
 
 void assert_card_valid(card_t c) {
   // it is the function of check the correct value.
+    assert(c.value >=2);
+    assert(c.value <=VALUE_ACE);
     assert(c.value);
-    assert(VALUE_ACE);
-    assert(c.value <=13);
   //it is the function of check the correct value.
-    assert(SPADES);
+    assert(c.suit);
     assert(c.suit<=3);
-    assert(NUM_SUITS);
+    assert(c.suit <=0);
     // condition to check the correct value. 
-  if(c.value<=2 || c.value>=VALUE_ACE){
+  if(c.value<2 || c.value>=VALUE_ACE){
     printf("error with value");
   }
   if(c.suit==0 || c.suit>NUM_SUITS){
