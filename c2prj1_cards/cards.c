@@ -10,8 +10,8 @@ void assert_card_valid(card_t c) {
     assert(c.value);
   //it is the function of check the correct value.
     assert(c.suit);
-    assert(c.suit<=3);
-    assert(c.suit <=0);
+    assert(c.suit<=SPADES);
+    assert(c.suit<=CLUBS);
     // condition to check the correct value. 
   if(c.value<2 || c.value>=VALUE_ACE){
     printf("error with value");
