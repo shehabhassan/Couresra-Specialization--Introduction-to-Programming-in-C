@@ -5,15 +5,15 @@ int * arrayMax(int * array, int n) {
   /*if (n<=0){
     return  ; 
     }*/
-  int large_Elem = 0;
-
-  for (int i=1; i<n ; i++){
-    if (array[i] > array[large_Elem])
+  int *large ;
+  large = 0;
+   for (int i=1; i<n ; i++){
+    if (array[i] > array[*large])
       {
-      large_Elem = i ;
-      }
+      *large = array[i];
+      } 
   }
-  return NULL ;  
+   return large ; 
 }
 void doTest(int * array, int n) {
   printf("arrayMax(");
@@ -39,8 +39,8 @@ void doTest(int * array, int n) {
     printf("%d\n", *p);
   }
 }
-
 int main(void) {
+
   int array1[] = { 77, 33, 19, 99, 42, 6, 27, 4};
   int array2[] = { -3, -42, -99, -1000, -999, -88, -77};
   int array3[] = { 425, 59, -3, 77, 0, 36};
@@ -48,7 +48,7 @@ int main(void) {
   doTest (array1, 8);
   doTest (array2, 7);
   doTest (array3, 6);
-  doTest (NULL, 0);
+  doTest (NULL  , 0);
   doTest (array1, 0);
   
   return EXIT_SUCCESS;
