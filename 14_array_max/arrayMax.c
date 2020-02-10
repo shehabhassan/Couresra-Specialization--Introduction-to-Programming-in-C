@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 int * arrayMax(int * array, int n) {
-  int  largest =0 ;
+  int  largest = 0 ;
   int *ptr ;
-   
+  ptr = &largest ;
   if (array == NULL ){
     return NULL ;}
    else if (n < 0){
@@ -16,7 +16,6 @@ int * arrayMax(int * array, int n) {
       largest = i;
       } 
   }
-   ptr = &largest ;
    return ptr ; 
 }
 void doTest(int * array, int n) {
