@@ -2,20 +2,22 @@
 #include <stdlib.h>
 
 int * arrayMax(int * array, int n) {
-  int * largest ;
-  *largest =0;
+  int  largest =0 ;
+  int *ptr ;
+   
   if (array == NULL ){
     return NULL ;}
    else if (n < 0){
     return 0 ; 
     }
    for (int i=1; i<n ; i++){
-    if (array[i] > array[*largest])
+    if (array[i] > array[largest])
       {
-      * largest = i;
+      largest = i;
       } 
   }
-   return largest ; 
+   ptr = &largest ;
+   return ptr ; 
 }
 void doTest(int * array, int n) {
   printf("arrayMax(");
