@@ -39,7 +39,7 @@ void doTest(int * array, int n) {
     printf("NULL\n");
   }
   else {
-    printf("%d\n",*p);
+    printf("%d\n",array[*p]);
   }
 }
 int main(void) {
