@@ -2,18 +2,20 @@
 #include <stdlib.h>
 
 int * arrayMax(int * array, int n) {
-  /*if (n<=0){
-    return  ; 
-    }*/
-  static int *large;
-   * large = 0; 
+  int * largest ;
+  *largest =0;
+  if (array == NULL ){
+    return NULL ;}
+   else if (n < 0){
+    return 0 ; 
+    }
    for (int i=1; i<n ; i++){
-    if (array[i] > array[*large])
+    if (array[i] > array[*largest])
       {
-      *large = i;
+      * largest = i;
       } 
   }
-   return large ; 
+   return largest ; 
 }
 void doTest(int * array, int n) {
   printf("arrayMax(");
@@ -32,11 +34,11 @@ void doTest(int * array, int n) {
   }
   printf(", %d) is \n", n);
   int * p = arrayMax (array, n);
-  if (*p == 0) {
+  if (p == NULL) {
     printf("NULL\n");
   }
   else {
-    printf("%d\n",array[*p]);
+    printf("%d\n",*p);
   }
 }
 int main(void) {
