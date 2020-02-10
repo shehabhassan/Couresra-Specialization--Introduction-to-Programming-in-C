@@ -7,8 +7,8 @@ int * arrayMax(int * array, int n) {
    ptr = &largest ;
   if (array == NULL ){
     return NULL ;}
-   else if (n < 0){
-    return 0 ; 
+   else if (n <= 0){
+    return NULL ; 
     }
    for (int i=1; i<n ; i++){
     if (array[i] > array[* ptr])
@@ -35,7 +35,7 @@ void doTest(int * array, int n) {
   }
   printf(", %d) is \n", n);
   int * p = arrayMax (array, n);
-  if (p == NULL) {
+  if ( p == NULL) {
     printf("NULL\n");
   }
   else {
