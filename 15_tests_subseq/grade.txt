@@ -1,7 +1,0 @@
-Grading at Sun Feb 16 23:44:28 UTC 2020
-**Testing broken implementation 10 **
--------------------------------------
-
-Could not compile test-subseq.c with /usr/local/l2p/subseq/subseq10.o
-
-Overall Grade: FAILED

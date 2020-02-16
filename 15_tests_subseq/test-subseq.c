@@ -21,7 +21,7 @@ int main (){
     exit(EXIT_FAILURE);
   }
   int array4[] = {-2,-5,-8,-50,80,70,10,41}; 
-  if (maxSeq(array4 , 7) = 4){
+  if (maxSeq(array4 , 7) != 4){
     printf("the wrong array");
     exit(EXIT_FAILURE);
   }
