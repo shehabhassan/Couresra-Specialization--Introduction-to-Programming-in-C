@@ -5,8 +5,8 @@ size_t maxSeq(int *array ,  int n );
 
 int main (){
 
-  int array1[] = {0,2,3,15,1,2,3};
-  if (maxSeq(array1,7)!= 4 ){
+  int array1[] = {0,1,2,1,2,3,1,2};
+  if (maxSeq(array1,8)!= 3 ){
     printf("failed maxseq \n");
     exit(EXIT_FAILURE) ;
   }
@@ -20,16 +20,47 @@ int main (){
     printf("the array should not be right ");
     exit(EXIT_FAILURE);
   }
-  int array4[] = {1,5,8,50,80,150,0,41}; 
-  if (maxSeq(array4,8) != 6){
+  int array4[] = {0,2,3,15,1,2,3}; 
+  if (maxSeq(array4,7) != 4){
     printf("the wrong array");
     exit(EXIT_FAILURE);
   }
-  int array5[] = {-50,-40,-30,-10,-6,-5,-4,-3,-1};
-  if (maxSeq(array5,9) != 9){
+  int array5[] = {50,40,0,1,6,7,10,15};
+  if (maxSeq(array5,8) != 6){
     printf("WRONG");
     exit(EXIT_FAILURE);
   }
-  return EXIT_SUCCESS;
+  int array6[] ={0,-1,-2,3,4,5,80,1,20};
+  if(maxSeq(array6,9) != 4){
+    printf("failure");
+    exit(EXIT_FAILURE);
+  }
+  int array7[]={0,2,5,8,0,4,5,6,7,0};
+  if (maxSeq(array7,10) != 5){
+  printf("done");
+  exit(EXIT_FAILURE);
+}
+  int array8[] = {4,8,12,4,-5};
+  if (maxSeq(array8,5) != 3){
+    printf("false1");
+    exit(EXIT_FAILURE);
+  }
+  int array9[] ={-2,-1,0,5,801,863,986};
+  if (maxSeq(array9,7)!= 5){
+    printf("false2");
+    exit(EXIT_FAILURE);
+  }
+  int array10[] ={1,-2,5,10,100,1000,10000,100,10,0};
+  if (maxSeq(array10,10)!= 5){
+    printf("false3");
+    exit(EXIT_FAILURE);
+  }
+  int array11[]={10000,1000,100,10,0,100,1000,10000};
+  if(maxSeq(array11,8) != 4){
+    printf("correct is not here ");
+    exit(EXIT_FAILURE);
+  }
+  
+return EXIT_SUCCESS;
   
 }
