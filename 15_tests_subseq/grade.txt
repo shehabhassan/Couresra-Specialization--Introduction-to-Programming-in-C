@@ -1,0 +1,7 @@
+Grading at Mon Feb 17 00:18:30 UTC 2020
+**Testing broken implementation 10 **
+-------------------------------------
+
+Your test program did not identify /usr/local/l2p/subseq/subseq10.o as broken!
+
+Overall Grade: FAILED
