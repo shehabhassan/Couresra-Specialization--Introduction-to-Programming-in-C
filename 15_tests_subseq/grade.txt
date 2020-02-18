@@ -1,0 +1,55 @@
+Grading at Tue Feb 18 11:39:13 UTC 2020
+**Testing broken implementation 10 **
+-------------------------------------
+
+false1
+**Testing broken implementation 11 **
+-------------------------------------
+
+failed maxseq 
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+failure
+**Testing broken implementation 2 **
+-------------------------------------
+
+the array should not be right 
+**Testing broken implementation 3 **
+-------------------------------------
+
+failure
+**Testing broken implementation 4 **
+-------------------------------------
+
+failure
+**Testing broken implementation 5 **
+-------------------------------------
+
+failed maxseq 
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+failure
+**Testing broken implementation 7 **
+-------------------------------------
+
+failed maxseq 
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+failed maxseq 
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+the array should not be right 
+**Testing correct implementation **
+-------------------------------------
+
+failureYour test program falsely failed the correct implementation!
+
+Overall Grade: FAILED
