@@ -10,6 +10,10 @@ int main (){
     printf("faild on 1,2,3,2 \n");
     exit(EXIT_FAILURE) ;
   }
+  if (maxSeq(array1,4) != 3){
+    printf("faild on 1,2,3,2\n ");
+    exit(EXIT_FAILURE); 
+  }
   int array2[]={8,8,8,9};
   if (maxSeq(array2,4) != 2){
     printf("faild on 8,8,8,9\n");
@@ -39,5 +43,6 @@ int main (){
     printf("faild on NULL1\n");
     exit(EXIT_FAILURE);
   }
+   
  return EXIT_SUCCESS;
 }
