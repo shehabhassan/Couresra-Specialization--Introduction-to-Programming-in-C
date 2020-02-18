@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-size_t maxSeq(int *array ,  int n );
+size_t maxSeq(signed int *array , int n );
 
 int main (){
 
@@ -40,13 +40,13 @@ int main (){
   printf("done");
   exit(EXIT_FAILURE);
 }
-  int array8[] = {4,8,12,4,-5};
-  if (maxSeq(array8,5) != 3){
+  signed int array8[] = {-15,-8,-5,-4,2};
+  if (maxSeq(array8,5) != 5){
     printf("false1");
     exit(EXIT_FAILURE);
   }
-  int array9[] ={-2,-1,0,5,801,863,986};
-  if (maxSeq(array9,7)!= 5){
+  int array9[] = {10,11,1,5,7};
+  if (maxSeq(array9,5)!= 3){
     printf("false2");
     exit(EXIT_FAILURE);
   }

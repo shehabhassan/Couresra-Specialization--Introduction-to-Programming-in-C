@@ -4,7 +4,7 @@
 size_t maxSeq(int * array , size_t n )
 {
   // inisilized variable. 
-  size_t max ;
+  int  max ;
   int count =0 ;
   for (int i =0; i<n ; i++){
     // check condidtion for each element inside the array. 
