@@ -11,7 +11,7 @@ int main (){
   int array4[] = {-6,-5,-4};
   int array5[] = {2,-3,5,6,8};
   int array6[] = {4,4,4,5};
-  int array7[] = {2,3,-4,5,10,14,20};
+  int array7[] = {2,4,3,6,10,15,-1,7,8,2};
 
   if(maxSeq(array1,0))
   {
@@ -48,5 +48,10 @@ int main (){
     printf("faild on NULL\n");
     exit(EXIT_FAILURE); 
    }
-   return EXIT_SUCCESS;
+   if(maxSeq(array7,10) != 4)
+   { 
+    printf("faild on NULL\n");
+    exit(EXIT_FAILURE); 
+   }
+    return EXIT_SUCCESS;
 }
