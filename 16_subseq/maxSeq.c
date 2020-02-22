@@ -8,17 +8,17 @@ size_t maxSeq(int *array ,size_t n)
   if (n == 0){
     return 0;
   }
-    for (int i=0;i<n;i++ ){
+    for (int i=0 ; i<n ; ++i ){
       if (array[i]>array[i-1])
 	{
-	  counter++;
+	  counter += 1;
 	}
-      else if (array[i]<array[i-1]){
-      if (counter >= max){
+      else{
+	counter = 1;
+      }
+      if (counter > max){
 	max = counter;
       }
-      counter =1;
-  }
     }
   return max;
 }
