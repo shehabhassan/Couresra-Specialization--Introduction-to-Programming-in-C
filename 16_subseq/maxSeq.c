@@ -3,8 +3,8 @@
 
 size_t maxSeq(int *array ,size_t n)
 {
-  int counter = 1 ;
-  int max = 1 ;
+  int counter = 0 ;
+  int max = 0 ;
   if (n == 0){
     return 0;
   }
@@ -13,12 +13,12 @@ size_t maxSeq(int *array ,size_t n)
 	{
 	  counter++;
 	}
-      else{
-        counter =1;
-      }
-      if (counter > max){
+      else if (array[i]<array[i-1]){
+      if (counter >= max){
 	max = counter;
       }
+      counter =1;
   }
+    }
   return max;
 }
