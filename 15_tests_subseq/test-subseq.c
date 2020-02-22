@@ -50,7 +50,7 @@ int main (){
    }
    if(maxSeq(array7,10) != 4)
    { 
-    printf("faild on NULL\n");
+    printf("faild on 2,4,3,6,10,15,-1,7,8,2\n");
     exit(EXIT_FAILURE); 
    }
     return EXIT_SUCCESS;
