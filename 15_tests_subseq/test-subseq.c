@@ -8,11 +8,12 @@ int main (){
   int array1[] = {1,2,3,2};
   int array2[] = {-4};
   int array3[] = {15};
-  int array4[] = {-4,-5,-6};
+  int array4[] = {-6,-5,-4};
   int array5[] = {2,-3,5,6,8};
   int array6[] = {4,4,4,5};
+  int array7[] = {2,3,-4,5,10,14,20};
 
-  if(maxSeq(array1,0) != 0)
+  if(maxSeq(array1,0))
   {
     printf("faild on NULL\n");
     exit(EXIT_FAILURE); 
