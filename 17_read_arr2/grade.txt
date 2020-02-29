@@ -1,9 +1,0 @@
-Grading at Sat Feb 29 08:39:31 UTC 2020
-Attempting to compile test.c
-The code did not compile
-Line_5_did_not_match
-Line_8_did_not_match
-Your file did not match the expected ouput
-Your output did not match what we expected.
-
-Overall Grade: F
