@@ -1,15 +1,8 @@
 p
-n
-n
-n
-bannana has nana ban characters into it!
-r
-r
+l
 n
 a
-n
-a
-\0
-NULL
-NULL
-
+bannana has nana 3 characters into it!
+r
+o
+fuurw
