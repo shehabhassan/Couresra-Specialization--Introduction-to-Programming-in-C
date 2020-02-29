@@ -1,7 +1,0 @@
-Grading at Sat Feb 29 12:24:47 UTC 2020
-Attempting to compile test.c
-The code did not compile
-Your file matched the expected output
-Your output matched what we expected
-
-Overall Grade: F
