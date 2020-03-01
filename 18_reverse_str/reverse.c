@@ -5,7 +5,7 @@
 void reverse(char * str) {
   // check the string have elements. 
   if (str==0){
-    return 0;
+    return ;
   }   
   char *end = str + strlen(str)-1;
  
