@@ -3,6 +3,15 @@
 #include <string.h>
 
 void reverse(char * str) {
+   
+  char *end = str +strlen(str)-1;
+  char temp = *str;
+  while(str < end){
+    *str = *end;
+    *end = temp;
+    temp++;
+    end--;
+  }
   //WRITE ME!
 }
 
