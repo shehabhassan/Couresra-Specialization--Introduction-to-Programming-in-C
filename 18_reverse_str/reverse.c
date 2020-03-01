@@ -5,8 +5,9 @@
 void reverse(char * str) {
    
   char *end = str + strlen(str)-1;
-  char temp = *str;
+ 
   while(str < end){
+     char temp = *str;
     *str = *end;
     *end = temp;
     str++;
