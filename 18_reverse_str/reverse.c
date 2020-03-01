@@ -3,7 +3,10 @@
 #include <string.h>
 
 void reverse(char * str) {
-   
+  // check the string have elements. 
+  if (str==0){
+    return 0;
+  }   
   char *end = str + strlen(str)-1;
  
   while(str < end){
