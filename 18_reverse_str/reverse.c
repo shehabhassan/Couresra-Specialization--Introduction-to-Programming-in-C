@@ -4,12 +4,12 @@
 
 void reverse(char * str) {
    
-  char *end = str +strlen(str)-1;
+  char *end = str + strlen(str)-1;
   char temp = *str;
   while(str < end){
     *str = *end;
     *end = temp;
-    temp++;
+    str++;
     end--;
   }
   //WRITE ME!
