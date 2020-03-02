@@ -40,7 +40,7 @@ void numToBits(uint32_t * nums, int nNums, int * bits, int nBits) {
     printf("Invalid Call To numToBits! nBits is %d, nNums is %d \n",nBits,nNums);
     return ; 
   }
-  for(int i= 0; i<nNums ; i++){
+  for(int i= nNums; i<=0 ; i--){
     for(int j=nBits;j>=0;j--){
       for(int k=0;k<32;k++){
 	bits[i*32+k]=getNthBit(nums[i],k);
