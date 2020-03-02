@@ -43,7 +43,7 @@ void numToBits(uint32_t * nums, int nNums, int * bits, int nBits) {
   for(int i= 0; i<nNums ; i++){
     for(int j=nBits;j>=0;j--){
       for(int k=0;k<32;k++){
-	bits[i*32+k]=getNthBit(num[i],k);
+	bits[i*32+k]=getNthBit(nums[i],k);
       }
     }
   }
