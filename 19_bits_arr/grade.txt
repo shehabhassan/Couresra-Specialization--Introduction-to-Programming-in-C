@@ -1,0 +1,8 @@
+Grading at Mon Mar  2 17:33:24 UTC 2020
+Attempting to compile numToBits.c
+numToBits.c:48:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+The code did not compile!
+
+Overall Grade: F
