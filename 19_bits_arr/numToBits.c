@@ -45,7 +45,7 @@ void numToBits(uint32_t * nums, int nNums, int * bits, int nBits) {
       }
     }
   }
-}
+
 
 void doTest(uint32_t * nums, int n) {
   int bits[n *32];
